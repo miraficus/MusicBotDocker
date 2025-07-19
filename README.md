@@ -1,5 +1,5 @@
 # MusicBotDocker
-JMusicBot Docker
+[JMusicBot](https://github.com/jagrosh/MusicBot) Docker
 
 ## Guides
 Official Guide: [HERE](https://jmusicbot.com/setup/)<br/>
