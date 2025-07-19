@@ -1,0 +1,12 @@
+services:
+  jmusicbot:
+    build: .
+    container_name: musicbot
+    ports:
+      - "2333:2333"
+    environment:
+      BOT_TOKEN: "your-real-bot-token"
+      OWNER_ID: "your-discord-id"
+    volumes:
+      - ./Playlists:/app/Playlists
+    restart: unless-stopped
