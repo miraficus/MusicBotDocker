@@ -35,3 +35,6 @@ services:
       - ./Playlists:/app/Playlists
     restart: unless-stopped
 ```
+```bash
+docker compose up --build -d
+```
