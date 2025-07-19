@@ -1,16 +1,22 @@
-# Use an official OpenJDK 11 base image
 FROM openjdk:11-jre-slim
 
-# Set working directory inside the container
 WORKDIR /app
 
-# Copy required files into the container
+# Copy files into the container
 COPY JMusicBot-0.4.3.jar .
-COPY config.txt .
 COPY Playlists/ Playlists/
+COPY config-template.txt config-template.txt
+COPY entrypoint.sh entrypoint.sh
 
-# Expose any necessary ports (customize if needed)
+# Make the startup script executable
+RUN chmod +x entrypoint.sh
+
 EXPOSE 2333
 
-# Run the bot with no GUI
-CMD ["java", "-Dnogui=true", "-jar", "JMusicBot-0.4.3.jar"]
+# Set environment variables
+ENV BOT_TOKEN=changeme \
+    OWNER_ID=123456789012345678 \
+    UPDATE_ALERTS=true
+
+# Start the bot using the entrypoint
+ENTRYPOINT ["./entrypoint.sh"]
