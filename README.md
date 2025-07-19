@@ -2,8 +2,8 @@
 JMusicBot Docker
 
 ## Guides
-Official Guide: [HERE](https://jmusicbot.com/setup/)
-Get Bot Token: [HERE](https://jmusicbot.com/getting-a-bot-token/)
+Official Guide: [HERE](https://jmusicbot.com/setup/)<br/>
+Get Bot Token: [HERE](https://jmusicbot.com/getting-a-bot-token/)<br/>
 Find user ID: [HERE](https://jmusicbot.com/finding-your-user-id/)
 
 ## Build and Run
