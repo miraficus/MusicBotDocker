@@ -13,6 +13,7 @@ docker run -d \
   --name musicbot \
   -e BOT_TOKEN='your-real-token' \
   -e OWNER_ID='your-discord-id' \
+  -e BOT_PREFIX="@mention" \
   -e UPDATE_ALERTS=true \
   jmusicbot
 ```
@@ -28,6 +29,7 @@ services:
     environment:
       BOT_TOKEN: "your-real-bot-token"
       OWNER_ID: "your-discord-id"
+      BOT_PREFIX: "@mention"
       UPDATE_ALERTS: true
     volumes:
       - ./Playlists:/app/Playlists

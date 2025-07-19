@@ -19,6 +19,7 @@ EXPOSE 2333
 # Set environment variables
 ENV BOT_TOKEN=changeme \
     OWNER_ID=123456789012345678 \
+    BOT_PREFIX=@mention \
     UPDATE_ALERTS=true
 
 # Start the bot using the entrypoint
