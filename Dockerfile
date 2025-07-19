@@ -2,6 +2,9 @@ FROM openjdk:11-jre-slim
 
 WORKDIR /app
 
+# Install envsubst (from gettext-base)
+RUN apt-get update && apt-get install -y gettext-base && rm -rf /var/lib/apt/lists/*
+
 # Copy files into the container
 COPY JMusicBot-0.4.3.jar .
 COPY Playlists/ Playlists/
