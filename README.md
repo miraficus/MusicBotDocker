@@ -28,6 +28,7 @@ services:
     environment:
       BOT_TOKEN: "your-real-bot-token"
       OWNER_ID: "your-discord-id"
+      UPDATE_ALERTS: true
     volumes:
       - ./Playlists:/app/Playlists
     restart: unless-stopped
